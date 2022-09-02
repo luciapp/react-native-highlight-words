@@ -37,7 +37,7 @@ export default function Highlighter({
   return (
     <Text style={style} {...otherTextProps}>
       {chunks.map((chunk, index) => {
-        const text = textToHighlight.substring(
+        const text = textToHighlight.substr(
           chunk.start,
           chunk.end - chunk.start
         );
