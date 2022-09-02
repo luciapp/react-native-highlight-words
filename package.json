@@ -1,10 +1,17 @@
 {
-  "name": "react-native-highlight-words",
-  "version": "1.0.1",
+  "name": "@luciapp/react-native-highlight-words",
+  "version": "2.0.0",
   "description": "A React Native port of react-highlight-words. This component is used to highlight words within a larger body of text.",
-  "main": "index.js",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "install-peers",
+    "prepublish": "npm run build",
+    "build": "yarn build:esm && yarn build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs"
   },
   "repository": {
     "type": "git",
@@ -35,6 +42,14 @@
     "prop-types": "^15.5.7"
   },
   "peerDependencies": {
-    "react": "^15.5.0 || ^16"
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "@types/highlight-words-core": "^1.2.1",
+    "@types/react": "~18.0.18",
+    "@types/react-native": "~0.69.6",
+    "install-peers-cli": "^2.2.0",
+    "typescript": "^4.8.2"
   }
 }
