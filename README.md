@@ -1,4 +1,7 @@
 # React Native Highlight Words
+
+This is a fork of Claudéric Demers library [react-native-highlight-words](https://github.com/clauderic/react-native-highlight-words).
+I removed the proptypes and changed the code to typescript.
 React Native component used to highlight words within a larger body of text. This is a port of [react-highlight-words](https://github.com/bvaughn/react-highlight-words).
 
 Check out a [demo](https://getexponent.com/@clauderic/react-native-highlight-words) using Exponent.
@@ -38,6 +41,7 @@ And the `Highlighter` component will highlight all occurrences of search terms w
 | searchWords     | Array<String> |     ✓     | Array of search words                                                                                                   |
 | style           | Object        |           | Styles applied to the text wrapper                                                                                      |
 | textToHighlight | String        |     ✓     | Text to highlight matches in                                                                                            |
+| otherTextProps  | TextProps     |           | Other Properties you can apply to the Text                                                                             |
 
 ## License
 MIT License - fork, modify and use however you want.

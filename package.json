@@ -31,12 +31,12 @@
     "occurrences",
     "search"
   ],
-  "author": "Clauderic Demers",
+  "author": "Florian Klenk <hello@luciapp.de>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/clauderic/react-native-highlight-words/issues"
+    "url": "https://github.com/luciapp/react-native-highlight-words/issues"
   },
-  "homepage": "https://github.com/clauderic/react-native-highlight-words",
+  "homepage": "https://github.com/luciapp/react-native-highlight-words",
   "dependencies": {
     "highlight-words-core": "^1.0.3",
     "prop-types": "^15.5.7"
