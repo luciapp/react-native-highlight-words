@@ -9,7 +9,7 @@ interface Props {
   highlightStyle?: StyleProp<TextStyle>;
   searchWords: string[];
   textToHighlight: string;
-  sanitize: FindChunksArgs["sanitize"];
+  sanitize?: FindChunksArgs["sanitize"];
   style?: StyleProp<TextStyle>;
   otherTextProps?: TextProps;
 }
