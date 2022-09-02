@@ -11,7 +11,7 @@ interface Props {
   textToHighlight: string;
   sanitize: FindChunksArgs["sanitize"];
   style?: StyleProp<TextStyle>;
-  otherTextProps: TextProps;
+  otherTextProps?: TextProps;
 }
 
 /**
